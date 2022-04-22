@@ -47,18 +47,19 @@ const Speakers = () => {
         </Fade> */}
 
         <Fade delay={200}>
-          <div className='collage-container'>
+          {/* <div className='collage-container'>
             <img src={speakersCollage} alt='speakers collage' />
-          </div>
+          </div> */}
+          <h1 style={{fontSize: '6vw', textAlign: 'center'}}><span style={{color: '#ff4929'}}>Displayed</span> Soon <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1>
         </Fade>
 
-        <Fade bottom delay={350}>
+        {/* <Fade bottom delay={350}>
           <div className='btn-container'>
             <span className='btn-link' onClick={onClickHandler}>
               Checkout all speakers
             </span>
           </div>
-        </Fade>
+        </Fade> */}
       </div>
     </section>
   );
