@@ -17,10 +17,10 @@ const Tickets = () => {
         <div className='section-content'>
           <div className='tickets-container'>
             <Fade delay={50}>
-              {/* {ticketsDetails.map((ticket) => (
+              {ticketsDetails.map((ticket) => (
                 <Ticket key={ticket.key} ticket={ticket} />
-              ))} */}
-              <h1 style={{fontSize: '6vw', textAlign: 'center'}}><span style={{color: '#ff4929'}}>Coming</span> Soon <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1>
+              ))}
+              {/* <h1 style={{fontSize: '6vw', textAlign: 'center'}}><span style={{color: '#ff4929'}}>Coming</span> Soon <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1> */}
             </Fade>
           </div>
         </div>

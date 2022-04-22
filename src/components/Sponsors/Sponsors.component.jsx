@@ -23,7 +23,7 @@ const Sponsors = () => {
       </Fade>
       <div className='section-content'>
         <div className='sponsors-container'>
-          {/* {sponsors.map((sponsor) => (
+          {sponsors.map((sponsor) => (
             <div
               key={sponsor.key}
               className='sponsor-image'
@@ -33,8 +33,8 @@ const Sponsors = () => {
                 <img src={sponsor.image} alt='sponsor' />
               </Fade>
             </div>
-          ))} */}
-          <h1 style={{fontSize: '6vw', textAlign: 'center'}}><span style={{color: '#ff4929'}}>Partnering</span> Soon <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1>
+          ))}
+          {/* <h1 style={{fontSize: '6vw', textAlign: 'center'}}><span style={{color: '#ff4929'}}>Partnering</span> Soon <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1> */}
         </div>
       </div>
     </section>
