@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 import { withRouter } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 import './SideDrawer.styles.scss';
 
@@ -16,14 +16,23 @@ class SideDrawer extends React.Component {
       history.push(`/${route}`);
     };
 
-    const handleIconClick = () => {
-      ReactGA.event({
-        category: "'External Link' Clicks",
-        action: "Daksh's website opened",
-        label: "Website opened from sidedrawer's icon at bottom"
-      });
-      window.open('https://dakshkhetan.now.sh', '_blank');
-    };
+    // const handleIconClick = () => {
+    //   ReactGA.event({
+    //     category: "'External Link' Clicks",
+    //     action: "Daksh's website opened",
+    //     label: "Website opened from sidedrawer's icon at bottom"
+    //   });
+    //   window.open('https://dakshkhetan.now.sh', '_blank');
+    // };
+
+    const toggleyear = ()=>{
+      const leftDrawer = document.getElementById("dlcont");
+      if(leftDrawer.style.display === "block") {
+        leftDrawer.style.display = "none";
+      } else {
+        leftDrawer.style.display = "block";
+      }
+    }
 
     return (
       <nav className={`${show ? `sidedrawer open` : `sidedrawer`}`}>
@@ -52,13 +61,22 @@ class SideDrawer extends React.Component {
           <span className='option' onClick={() => onClickHandler('contact')}>
             Contact
           </span>
+          <div className="dropleft">
+            <button className="dropbtn" onClick={toggleyear}>TEDxBVCOE'22&nbsp;
+              <i className="fa fa-caret-left"></i>
+            </button>
+            <div className="dropleft-content" id="dlcont">
+              <a href="/2021">TEDxBVCOE'21</a>
+              <a className='active' href="/">TEDxBVCOE'22</a>
+            </div>
+          </div> 
         </div>
 
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           icon={faExternalLinkAlt}
           className='icon'
           onClick={handleIconClick}
-        />
+        /> */}
       </nav>
     );
   }

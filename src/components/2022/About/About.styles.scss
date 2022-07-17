@@ -41,8 +41,8 @@
         }
 
         &.selected {
-          background-color: darken(#ff4929, 5%);
-          border-color: darken(#ff4929, 5%);
+          background-color: darken(#FC3150, 5%);
+          border-color: darken(#FC3150, 5%);
           color: #fff;
         }
       }
@@ -58,7 +58,7 @@
       img {
         width: 100%;
         height: auto;
-        border: 2px solid darken(#ff4929, 20%);
+        border: 2px solid darken(#FC3150, 20%);
         border-radius: 2px;
 
         &.loading {

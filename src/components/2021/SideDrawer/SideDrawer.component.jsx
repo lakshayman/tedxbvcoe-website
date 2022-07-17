@@ -25,6 +25,15 @@ class SideDrawer extends React.Component {
       window.open('https://dakshkhetan.now.sh', '_blank');
     };
 
+    const toggleyear = ()=>{
+      const leftDrawer = document.getElementById("dlcont");
+      if(leftDrawer.style.display === "block") {
+        leftDrawer.style.display = "none";
+      } else {
+        leftDrawer.style.display = "block";
+      }
+    }
+
     return (
       <nav className={`${show ? `sidedrawer2021 open` : `sidedrawer2021`}`}>
         <div className='options-container'>
@@ -52,6 +61,15 @@ class SideDrawer extends React.Component {
           <span className='option' onClick={() => onClickHandler('contact')}>
             Contact
           </span>
+          <div className="dropleft">
+            <button className="dropbtn" onClick={toggleyear}>TEDxBVCOE'22&nbsp;
+              <i className="fa fa-caret-left"></i>
+            </button>
+            <div className="dropleft-content" id="dlcont">
+              <a className='active' href="/2021">TEDxBVCOE'21</a>
+              <a href="/">TEDxBVCOE'22</a>
+            </div>
+          </div> 
         </div>
 
         <FontAwesomeIcon

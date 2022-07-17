@@ -52,6 +52,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
+    .contentSubContainer {
+      margin-top: -30px;
+      .heading{
+        font-size: 60px;
+      }
+      .subHeading{
+        margin-top: -40px;
+      }
+    }
 
     // TODO: unhide later
     // display: none;
@@ -133,6 +143,7 @@
 
   @media only screen and (max-width: 768px) {
     height: 85vh !important;
+    background-size: auto;
 
     .logo-container {
       // TODO: use commented value
@@ -216,6 +227,17 @@
     .logo-container {
       height: 50%;
       margin-top: -40px;
+    }
+    .content {
+      .contentSubContainer {
+        .heading {
+          font-size: 35px;
+        }
+
+        .subHeading {
+          font-size: 25px;
+        }
+      }
     }
   }
 }

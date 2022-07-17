@@ -38,7 +38,7 @@ a {
   .section-heading {
     text-align: center;
     font-size: 2.8rem;
-    color: #ff4929;
+    color: #FC3150;
     padding-top: 40px;
     margin-top: 0;
   }
@@ -77,11 +77,11 @@ a {
         img {
           width: 300px;
           height: 200px;
-          border: 3px solid #ff4929;
+          border: 3px solid #FC3150;
           transition: all ease-in-out 0.2s;
 
           &:hover {
-            border: 3px solid darken(#ff4929, 20%);
+            border: 3px solid darken(#FC3150, 20%);
             transition: all ease-in-out 0.2s;
           }
         }
@@ -100,7 +100,7 @@ a {
         grid-gap: 40px;
 
         .sponsors-soon {
-          font-size: 3rem;
+          font-size: 2rem;
         }
 
         .sponsor-image {

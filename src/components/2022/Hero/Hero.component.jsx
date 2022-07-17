@@ -32,9 +32,9 @@ const Hero = () => {
         </div>
 
         <div className='content'>
-          <center style={{marginTop: "-30px"}}>
-            <h1 style={{fontSize: 60}}><strong style={{color: '#ff4929'}}>TED</strong>xBVCOE 2022</h1>
-            <h2 style={{marginTop: "-40px"}}>To Be Announced <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h2>
+          <center className='contentSubContainer'>
+            <h1 className='heading'><strong style={{color: '#FC3150'}}>TED</strong>xBVCOE 2022</h1>
+            <h2 className='subHeading'>To Be Announced <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h2>
           </center>
         </div>
       </Fade>
