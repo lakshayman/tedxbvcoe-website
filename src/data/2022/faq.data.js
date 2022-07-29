@@ -1,7 +1,7 @@
 export const FAQData = [
   {
-    question: 'What will be the platform of the event?',
-    answer: 'The event will be hosted on the platform "video.wiki".',
+    question: 'What will be the venue of the event?',
+    answer: "The event will be hosted in offline mode within the premises of Bharati Vidyapeeth’s College of Engineering.",
     open: false
   },
   {
@@ -20,13 +20,13 @@ export const FAQData = [
   {
     question:
       'I made a mistake buying my pass for the event(s). What do I do now?',
-    answer: 'Will be answered soon!',
+    answer: 'Reach out to us on bvcoetedx@gmail.com.',
     open: false
   },
   {
     question:
       'Can I cancel my registration for the events I enrolled for? If so, what is the process?',
-    answer: 'Will be answered soon!',
+    answer: 'Reach out to us on bvcoetedx@gmail.com.',
     open: false
   },
   {
