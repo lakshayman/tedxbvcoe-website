@@ -53,6 +53,51 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    .child {
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+
+      .icon {
+        font-size: 40px;
+        color: #FC3150;
+        margin-bottom: 12px;
+      }
+
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+      }
+
+      &.date-container {
+        .date {
+          margin-top: -2px;
+
+          sup {
+            font-size: 22px;
+          }
+
+          .ampersand {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    
+    .contentSubContainer {
+      margin-top: -30px;
+      .heading{
+        font-size: 60px;
+      }
+      .subHeading{
+        margin-top: -40px;
+      }
+    }
+
     // TODO: unhide later
     // display: none;
     .dot1 {
@@ -133,6 +178,31 @@
 
   @media only screen and (max-width: 768px) {
     height: 85vh !important;
+    background-size: auto;
+
+    .content {
+      .child {
+        .icon {
+          font-size: 26px;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        &.date-container {
+          .date {
+            sup {
+              font-size: 20px;
+            }
+
+            .ampersand {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
 
     .logo-container {
       // TODO: use commented value
@@ -216,6 +286,17 @@
     .logo-container {
       height: 50%;
       margin-top: -40px;
+    }
+    .content {
+      .contentSubContainer {
+        .heading {
+          font-size: 35px;
+        }
+
+        .subHeading {
+          font-size: 25px;
+        }
+      }
     }
   }
 }

@@ -9,7 +9,7 @@
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        border: 3px solid darken(#ff4929, 20%);
+        border: 3px solid darken(#FC3150, 20%);
         // filter: grayscale(1);
 
         @media only screen and (max-width: 768px) {
@@ -33,13 +33,13 @@
 
   &.core {
     .name {
-      color: lighten(#ff4929, 5%);
+      color: lighten(#FC3150, 5%);
     }
   }
 
   .position {
     font-size: 1rem;
-    color: lighten(#ff4929, 5%);
+    color: lighten(#FC3150, 5%);
   }
 
   .social-icons {

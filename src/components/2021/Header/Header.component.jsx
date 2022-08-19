@@ -33,6 +33,7 @@ class Header extends React.Component {
   closeSideDrawer = () => this.setState({ sideDrawerOpen: false });
 
   backdropClickHandler = () => {
+    document.getElementById('dlcont').style.display = "none";
     this.closeSideDrawer();
   };
 
@@ -78,9 +79,15 @@ class Header extends React.Component {
       {this.headerOption('faq')}
       {this.headerOption('team')}
       {this.headerOption('contact')}
-      <a href='/' className={`${className} hover`}>
-        TedxBVCOE'22
-      </a>
+      <div className="dropdown">
+        <button className="dropbtn">TEDxBVCOE'21&nbsp;
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+          <a className='active' href="/2021">TEDxBVCOE'21</a>
+          <a href="/">TEDxBVCOE'22</a>
+        </div>
+      </div> 
     </>
   );
 

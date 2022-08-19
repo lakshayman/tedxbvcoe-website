@@ -3,18 +3,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: auto !important;
-  min-height: 760px;
   color: #111;
   padding: 0 5%;
 
   background-image: url('../../../assets/2022/hero/speakers-background.svg');
-  background-size: contain;
+  background-size: 100% 100%;
 
   .speaker-section-heading {
     text-align: center;
     font-size: 5rem;
-    color: #ff4929;
+    color: #FC3150;
     margin-block-start: 0;
     margin-block-end: 0;
   }
@@ -107,7 +105,7 @@
 
     //   img {
     //     border-radius: 50%;
-    //     border: 2px solid #ff4929;
+    //     border: 2px solid #FC3150;
     //   }
 
     //   .img-1 {
@@ -182,7 +180,8 @@
   }
 
   @media only screen and (max-width: 1024px) {
-    min-height: unset;
+    height: 400px !important;
+    background-image: none;
 
     .section-content {
       padding-bottom: 80px;
