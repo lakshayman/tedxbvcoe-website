@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import themeVideoClip from '../../../assets/2022/hero/theme-video-clip.mp4';
-import videoPosterDesktop from '../../../assets/2022/hero/hero-section-video-poster.jpg';
+import videoPosterDesktop from '../../../assets/2022/hero/hero-section-video-poster.PNG';
 
 import './Hero.styles.scss';
 
