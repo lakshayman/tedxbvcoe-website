@@ -85,7 +85,7 @@ a {
         flex-direction: column;
         background-color: #fff7f7;
         border: 8px solid #fff;
-        border-radius: 12px;
+        border-radius: 50px;
         margin: 10px;
         overflow: hidden;
 
@@ -110,7 +110,7 @@ a {
           .category {
             h3 {
               width: fit-content;
-              background-color: #D1D1D1;
+              // background-color: #D1D1D1;
               border-radius: 8px;
               color: lighten(#FC3150, 10%);
               text-transform: uppercase;
