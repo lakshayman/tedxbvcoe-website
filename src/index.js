@@ -25,8 +25,7 @@ import {
   MerchWrapper2022,
   FAQWrapper2022,
   TeamWrapper2022,
-  ContactWrapper2022,
-  SpeakersWrapper2022
+  ContactWrapper2022
  } from './2022.js';
 
 import smoothscroll from 'smoothscroll-polyfill';
@@ -35,6 +34,7 @@ smoothscroll.polyfill();
 const Home2021 = lazy(() => import('./pages/2021/Home/Home'));
 const Speakers2021 = lazy(() => import('./pages/2021/Speakers/Speakers'));
 const Home2022 = lazy(() => import('./pages/2022/Home/Home'));
+const Speakers2022 = lazy(() => import('./pages/2022/Speakers/Speakers'));
 
 ReactGA.initialize('UA-202539038-1');
 
@@ -43,8 +43,8 @@ const Root = () => (
     <Suspense fallback={<Spinner />}>
       <Switch>
         <Route exact path='/' component={Home2022} />
-        <Route path='/speakers' component={SpeakersWrapper2022} />
-        <Route path='/sponsors' component={SponsorsWrapper2022} />
+        <Route path='/speakers' component={Speakers2022} />
+        <Route path='/partners' component={SponsorsWrapper2022} />
         <Route path='/sponsorship' component={SponsorUsWrapper2022} />
         <Route path='/tickets' component={TicketsWrapper2022} />
         <Route path='/merch' component={MerchWrapper2022} />
