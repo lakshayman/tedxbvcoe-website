@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-// import { useHistory } from 'react-router-dom';
-// import ReactGA from 'react-ga';
+import { useHistory } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Fade from 'react-reveal/Fade';
 import { animateScroll as scroll } from 'react-scroll';
 
 // import { speakersCollage } from '../../data/speakers.data';
 
-// import speakersCollage from '../../../assets/2022/speakers/collage.png';
+import speakersCollage from '../../../assets/2022/speakers/collage.png';
 
 import './Speakers.styles.scss';
 
@@ -15,25 +15,25 @@ const Speakers = () => {
     scroll.scrollToTop();
   }, []);
 
-  // const history = useHistory();
+  const history = useHistory();
 
-  // const onClickHandler = () => {
-  //   ReactGA.event({
-  //     category: 'Button Clicks',
-  //     action: "'Checkout-Speakers' Button Click",
-  //     label: "User clicked on 'Checkout All Speakers' button"
-  //   });
-  //   history.push('/speakers');
-  // };
+  const onClickHandler = () => {
+    ReactGA.event({
+      category: 'Button Clicks',
+      action: "'Checkout-Speakers' Button Click",
+      label: "User clicked on 'Checkout All Speakers' button"
+    });
+    history.push('/speakers');
+  };
 
   return (
     <section id='speakers' className='section section-speakers'>
       <Fade bottom>
         <h1 className='speaker-section-heading'>Speakers</h1>
-        <h1 className='section-toBeAnnounced'>To Be Announced <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1>
+        {/* <h1 className='section-toBeAnnounced'>To Be Announced <span className="dot dot1">.</span> <span className="dot dot2">.</span> <span className="dot dot3">.</span></h1> */}
       </Fade>
 
-      {/* <div className='section-content'> */}
+      <div className='section-content'>
         {/* <Fade delay={200}>
           <div className='container'>
             {speakersCollage.map((speaker) => (
@@ -47,7 +47,7 @@ const Speakers = () => {
           </div>
         </Fade> */}
 
-        {/* <Fade delay={200}>
+        <Fade delay={200}>
           <div className='collage-container'>
             <img src={speakersCollage} alt='speakers collage' />
           </div>
@@ -59,8 +59,8 @@ const Speakers = () => {
               Checkout all speakers
             </span>
           </div>
-        </Fade> */}
-      {/* </div> */}
+        </Fade>
+      </div>
     </section>
   );
 };
