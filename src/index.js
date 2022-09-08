@@ -53,7 +53,7 @@ const Root = () => (
         <Route path='/contact' component={ContactWrapper2022} />
         <Route exact path='/2021' component={Home2021} />
         <Route path='/2021/speakers' component={Speakers2021} />
-        <Route path='/2021/sponsors' component={SponsorsWrapper2021} />
+        <Route path='/2021/partners' component={SponsorsWrapper2021} />
         <Route path='/2021/sponsorship' component={SponsorUsWrapper2021} />
         <Route path='/2021/tickets' component={TicketsWrapper2021} />
         <Route path='/2021/merch' component={MerchWrapper2021} />
