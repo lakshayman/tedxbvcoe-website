@@ -6,8 +6,6 @@ import { animateScroll as scroll } from 'react-scroll';
 
 // import { speakersCollage } from '../../data/speakers.data';
 
-import speakersCollage from '../../../assets/2022/speakers/collage.png';
-
 import './Speakers.styles.scss';
 
 const Speakers = () => {
@@ -47,11 +45,11 @@ const Speakers = () => {
           </div>
         </Fade> */}
 
-        <Fade delay={200}>
+        {/* <Fade delay={200}>
           <div className='collage-container'>
             <img src={speakersCollage} alt='speakers collage' />
           </div>
-        </Fade>
+        </Fade> */}
 
         <Fade bottom delay={350}>
           <div className='btn-container'>
